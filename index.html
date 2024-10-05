@@ -47,24 +47,40 @@
         </div>
         
           <div class="">
-            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            <input id="search" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
           </div>
           <div>
             <btn class="btn btn-success">Sort</btn>
           </div>
         
       </div>
-      <nav id="second-nav" class="flex justify-center py-3 gap-5">
+      <nav id="second-nav" class="flex justify-center pt-3 gap-5">
 
       </nav>
 </header>
 <main class="max-w-screen-xl mx-auto">
   <section id="first-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10 px-4"></section>
 </main>
+<!-- Open the modal using ID.showModal() method -->
+<button  class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modalEdit">
 
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 <script src="js/first.js"></script>
 </body>
 
 </html>
+
+
 
 
